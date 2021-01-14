@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SVN-Gotham Ultra';
+    src: url('SVN-GothamUltraItalic.eot');
+    src: url('SVN-GothamUltraItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamUltraItalic.woff2') format('woff2'),
+        url('SVN-GothamUltraItalic.woff') format('woff'),
+        url('SVN-GothamUltraItalic.ttf') format('truetype'),
+        url('SVN-GothamUltraItalic.svg#SVN-GothamUltraItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+

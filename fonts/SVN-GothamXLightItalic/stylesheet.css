@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SVN-Gotham XLight';
+    src: url('SVN-GothamXLightItalic.eot');
+    src: url('SVN-GothamXLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('SVN-GothamXLightItalic.woff2') format('woff2'),
+        url('SVN-GothamXLightItalic.woff') format('woff'),
+        url('SVN-GothamXLightItalic.ttf') format('truetype'),
+        url('SVN-GothamXLightItalic.svg#SVN-GothamXLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
