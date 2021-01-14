@@ -88,21 +88,17 @@ $(".md-checkbox-6 .field-false").click(function(){
 });
 
 
+
 function fixH () {
   let vh = window.innerHeight * 0.01;
   // Then we set the value in the --vh custom property to the root of the document
   document.documentElement.style.setProperty('--vh', `${vh}px`);
   var winH = window.innerHeight +'px ' ;
-  var height_col_1 = $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-10').outerHeight();
-  var height_col_2 = $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-3').outerHeight();
-   $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-2').css("height",height_col_1);
-  $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-2').css("height",height_col_2);
+ 
   $('.section').css('height', 'calc(var(--vh, 1vh) * 99.8');
   $('.section .md-iframe').css('height', 'calc(var(--vh, 1vh) * 99.8')
 }
-$( document ).ready(function(e) {
-  fixH()
-});
+
 jQuery(window).on('load', function() {
   fixH()
 })
@@ -110,8 +106,23 @@ jQuery(window).on('resize', function() {
   fixH()
 });
 
+setInterval(function(){ 
+  var height_col_1 = $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-10').outerHeight();
+  var height_col_2 = $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-3').outerHeight();
+   $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-2').css("height",height_col_1);
+  $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-2').css("height",height_col_2);
+ }, 200);
+
+jQuery(window).on('resize', function() {
+  var height_col_1 = $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-10').outerHeight();
+  var height_col_2 = $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-3').outerHeight();
+   $('.section-zone-6 .md-iframe-2 .content .md-row-1 .md-col-2').css("height",height_col_1);
+  $('.section-zone-6 .md-iframe-2 .content .md-row-2 .md-col-2').css("height",height_col_2);
+});
+
+
 $('.slider-zone-2 .owl-carousel').owlCarousel({
-    loop:true,
+    loop:false,
     margin:10,
     nav:true,
     responsive:{
@@ -180,14 +191,6 @@ $('.slider-zone-6 .owl-carousel').owlCarousel({
 })
 
 
-function openInNewTab(url) {
-  var win = window.open(url, '_blank');
-  win.focus();
-}
 
-function openLink(url) {
-  var win = window.open(url, '_self');
-  win.focus();
-}
 
 new WOW().init();

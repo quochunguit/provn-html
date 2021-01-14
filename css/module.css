@@ -95,9 +95,9 @@
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
-  background: url(../images/zone-1/ico-prev.png) no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
+  background: url(../images/zone-1/ico-prev.png) no-repeat !important;
+  -webkit-background-size: 100% 100% !important;
+          background-size: 100% 100% !important;
   width: 14px;
   height: 24px;
   margin: 0px;
@@ -116,9 +116,9 @@
        -o-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
-  background: url(../images/zone-1/ico-next.png) no-repeat;
-  -webkit-background-size: 100% 100%;
-          background-size: 100% 100%;
+  background: url(../images/zone-1/ico-next.png) no-repeat !important;
+  -webkit-background-size: 100% 100% !important;
+          background-size: 100% 100% !important;
   width: 14px;
   height: 24px;
   margin: 0px;
@@ -2259,8 +2259,37 @@
     padding: 0px 10%;
   }
 }
-.owl-carousel .owl-nav {
+.owl-carousel .owl-nav .owl-prev {
+  background: url(../images/zone-3/ico-2.png) no-repeat !important;
+  -webkit-background-size: 100% 100% !important;
+          background-size: 100% 100% !important;
+  position: absolute;
+  width: 60px;
+  height: 13.5px;
+  left: 5%;
+  bottom: 10%;
+}
+.owl-carousel .owl-nav .owl-prev span {
   display: none;
+}
+.owl-carousel .owl-nav .owl-prev:focus {
+  outline: none;
+}
+.owl-carousel .owl-nav .owl-next {
+  background: url(../images/zone-3/ico-1.png) no-repeat !important;
+  -webkit-background-size: 100% 100% !important;
+          background-size: 100% 100% !important;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  width: 60px;
+  height: 13.5px;
+}
+.owl-carousel .owl-nav .owl-next span {
+  display: none;
+}
+.owl-carousel .owl-nav .owl-next:focus {
+  outline: none;
 }
 
 .owl-carousel .owl-dots {
