@@ -887,9 +887,7 @@ input[type=submit] {
   }
 }
 .fancybox-slide--html .fancybox-close-small {
-  margin: 0px;
-  right: 10px;
-  top: 10px;
+  display: none;
 }
 
 .fancybox-slide {
@@ -1773,6 +1771,9 @@ input[type=submit] {
   }
 }
 @media (max-width: 450px) {
+  .section-zone-3 .md-iframe{
+    height: 130% !important;
+  }
   .section-zone-3 .md-iframe .content p {
     font-size: -webkit-calc(11px + 1vw);
     font-size: calc(11px + 1vw);
@@ -1782,7 +1783,7 @@ input[type=submit] {
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-1 {
     left: 6%;
-    bottom: 15%;
+    bottom: 11%;
     width: 10.5%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-2 {
@@ -1791,8 +1792,8 @@ input[type=submit] {
     width: 4.5%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-3 {
-    left: 20.4%;
-    bottom: 16%;
+    left: 25.4%;
+    bottom: 13%;
     width: 8%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-4 {
@@ -1802,23 +1803,23 @@ input[type=submit] {
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-5 {
     left: 43.3%;
-    bottom: 16%;
+    bottom: 12%;
     width: 13%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-6 {
     left: 65.2%;
-    bottom: 17%;
+    bottom: 14%;
     width: 6%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-7 {
     left: auto;
     right: 10%;
-    bottom: 16%;
+    bottom: 13%;
     width: 8.5%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-8 {
     right: 6%;
-    bottom: 10%;
+    bottom: 8%;
     width: 4.5%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-9 {
@@ -1829,12 +1830,12 @@ input[type=submit] {
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-10 {
     right: 18.8%;
-    bottom: 33%;
+    bottom: 23%;
     width: 17%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-11 {
     left: 21.7%;
-    bottom: 25%;
+    bottom: 19%;
     width: 26%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-12 {
@@ -1859,7 +1860,7 @@ input[type=submit] {
   }
   .section-zone-3 .md-iframe .img-zone-3 .zone-img-16 {
     right: 40%;
-    bottom: 37%;
+    bottom: 25%;
     width: 10.5%;
   }
   .section-zone-3 .md-iframe .img-zone-3 .text-zone-3 {
@@ -2357,7 +2358,7 @@ input[type=submit] {
   text-align: center;
 }
 .section-zone-6 .md-iframe-4 .content p {
-  font-size: 20px;
+  font-size: 30px;
 }
 .section-zone-6 .md-iframe-4 .content .next-zone {
   float: none;
@@ -2477,12 +2478,16 @@ input[type=submit] {
     padding-top: 10px;
   }
   .section-zone-6 .md-iframe-3 .title-ifr-3 .title-content-3 h3 {
-    font-size: -webkit-calc(25px + 1.5vw);
-    font-size: calc(25px + 1.5vw);
+    font-size: -webkit-calc(15px + 1.5vw);
+    font-size: calc(15px + 1.5vw);
+    line-height: 1.2;
   }
-
+   .section-zone-6 .md-iframe-3 .title-ifr-3 .title-content-3 p {
+    font-size: calc(10px + 1vw);
+  }
   .section-zone-6 .md-iframe-2 .content .md-row-1 .content {
     padding: 0px 10%;
+    font-size: calc(10px + 1vw);
   }
 }
 .owl-carousel .owl-nav .owl-prev {
@@ -2560,7 +2565,6 @@ input[type=submit] {
   display: table;
   margin: 20px auto 0 auto;
   width: 95% !important;
-  height: 100% !important;
 }
 
 @media (max-width: 767px) {
